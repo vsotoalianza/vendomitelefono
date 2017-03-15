@@ -25,11 +25,12 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- Header--> 
 
     <div class="wrapper row1">
+    
       <header id="header" class="clear"> 
         
         <!-- Menú -->
         
-        <div class="logo">
+        <div class="logo top-logo">
           <h1><a href="index.html"><img src="images/compra-venta-smartphone.png"></a></h1>
         </div>
         <div class="menu" align="right">
@@ -44,16 +45,43 @@ Licence URI: http://www.os-templates.com/template-terms
           </nav>
         </div>
         
+          <!-- Menú Responsive-->
+          
+          <nav class="menu-opener" style="display:none">
+            <div class="menu-opener-inner"></div>
+          </nav>
+          <nav class="menu2 top" style="display:none">
+            <ul class="menu-inner" >
+              <a href="index.html" class="menu-link">
+                <li>Inicio</li>
+              </a>
+              <a href="somos.html" class="menu-link">
+                <li>Quiénes Somos</li>
+              </a>
+              <a href="vmt-prensa.html" class="menu-link">
+                <li>VMT en la prensa</li>
+              </a>
+              <a href="contactanos.html" class="menu-link">
+                <li>Contacto</li>
+              </a>
+              <a href="registrate.html" class="menu-link">
+                <li>Registro</li>
+              </a>
+            </ul>
+          </nav>
+          
+        
         <!-- Fin Menú -->
         
       </header>
-    </div>
+      </div>
+
     
     <!-- Fin header -->
     <!-- Container --> 
 
     <div class="wrapper row3">
-      
+      <div class="shadow wrap"> 
       <main class="container clear" > 
 
         <!-- Content -->
@@ -65,45 +93,63 @@ Licence URI: http://www.os-templates.com/template-terms
           
         </div>
       </main>
+      </div>
     </div> 
-  </div>     
+  
   
   <!--Misión Visión--> 
   
-  <div class="verde">
-    <div class="shadow"> 
-      <div class="container">
-        <div class="mision"><h1 align="left">MISIÓN</h1> 
-          <p class="textoblanco" align="left">“Queremos mejorar el estado actual del medioambiente, por medio de la reducción de basura electrónica de forma autosustentable. Esto a través de un servicio que genere valor a las personas, incentivándolas así a participar”.</p><br></div>
-          
-          <div class="vision"><h1 align="left">VISIÓN</h1> <p class="textoblanco" align="left">“Ser gestores de cambio para el planeta, generando conciencia tanto a personas como empresas del cuidado del medioambiente sin dejar de ofrecer valor y experiencias enriquecedoras”</a>.</p><br>
-          </div>
-        </div> 
-      </div>
+  <div class="vision">
+  <div class="shadow wrap"> 
+    <div class="container">
+    <div class="flotar_left anxo"><span class="circle2"></span></div>
+    <div class="flotar_right anxo vision_p">
+      <h1 align="left">VISIÓN</h1> <p align="left">"Ser gestores de cambio para el planeta, generando conciencia tanto a personas como empresas del cuidado del medioambiente sin dejar de ofrecer valor y experiencias enriquecedoras"</p>
+    </div> 
     </div>
+  </div> 
+  </div>
+    
+  <div class="mision">
+  <div class="shadow wrap"> 
+   <div class="container">
+    <div class="flotar_left anxo vision_p">
+        <h1>MISIÓN</h1> 
+        <p>"Queremos mejorar el estado actual del medioambiente, por medio de la reducción de basura electrónica de forma autosustentable. Esto a través de un servicio que genere valor a las personas, incentivándolas así a participar".</p>
+    </div>    
+   <div class="flotar_right anxo"><span class="circle2"></span></div>
+  </div>
+  </div>
+</div>
+    </div>          
 
-    <div class="shadow"> 
+
+    <div class="shadow wrap"> 
       <div class="wrapper row3">
         
-       <main class="container clear" >       
+       <main class="container clear " >       
          <div class="content"><br></div>
          
          <!--Banner-->
          
          <div class="content">
-          <center>
+
           <h6 class="heading2">Te compramos<br>
             tu smartphone <b class="bold">usado</b></h6>
-          </center>
-          <center>
-            <div class="ecologico1" align="center"><img src="images/hoja.png" />&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/horizontal.png" /><p class="ecologico2">Protege el medio ambiente evitando que tus teléfonos se transformen en basura</p>
+
+          
+            <div class="ecologico1" align="center">
+                <div class="eco2">
+                    <img src="images/hoja.png" /><p class="ecologico2">Protege el medio ambiente evitando que tus teléfonos se transformen en basura</p>
+                </div>
             </div>
-          </center>
-          <br><br>
-          <center>
-            <div class="eco" align="center"><img src="images/compra-telefono.png" class="botoncompra"><img src="images/vende-telefono.png" class="botonvende">
+
+            <div class="eco" align="center">
+            <div class="eco3">
+          	  <a class="btn_green_buy" href="#">COMPRA</a><a class="btn_green_sale" href="#">VENDE</a>
+              </div>
             </div>
-          </center>
+            
         </div>
         
         <!-- Fin Banner -->
@@ -115,7 +161,7 @@ Licence URI: http://www.os-templates.com/template-terms
   <!-- Footer --> 
 
   <div class="wrapper row4 bg-gray">
-    <div class="shadow"><footer id="footer" class="clear" > 
+    <div class="shadow wrap"><footer id="footer" class="clear" > 
       <div class="one_quarter"><div class="flotante">
         <h6 class="title">PÁGINAS</h6>
         <ul class="nospace linklist">
@@ -151,9 +197,10 @@ Licence URI: http://www.os-templates.com/template-terms
 
 
 <!-- JAVASCRIPTS --> 
-
-<script src="layout/scripts/jquery.min.js"></script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="js/menu-opener.js"></script>
+<!--<script src="layout/scripts/jquery.min.js"></script> 
 <script src="layout/scripts/jquery.backtotop.js"></script> 
-<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>-->
 </body>
 </html>

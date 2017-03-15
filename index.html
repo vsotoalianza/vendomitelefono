@@ -18,6 +18,8 @@ Licence URI: http://www.os-templates.com/template-terms
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
   <!--favicon-->
   <link rel="icon" type="image/png" href="images/favicon.png" />
+
+
 </head>
 
 <!-- Body --> 
@@ -25,7 +27,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <body id="top" class="bgded fixed">
   <div class="contenedor">
 
-    <div class="shadow">
+    <div class="shadow wrap">
 
       <div align="right" class="sesion"><img src="images/iniciar.png" class="icono" />&nbsp;&nbsp;<a href="registrate.html" class="urls">INICIAR SESIÓN</a></div>
 
@@ -50,6 +52,31 @@ Licence URI: http://www.os-templates.com/template-terms
               </ul>
             </nav>
           </div>
+          
+          <!-- Menú Responsive-->
+          
+          <nav class="menu-opener" style="display:none">
+            <div class="menu-opener-inner"></div>
+          </nav>
+          <nav class="menu2" style="display:none">
+            <ul class="menu-inner" >
+              <a href="index.html" class="menu-link">
+                <li>Inicio</li>
+              </a>
+              <a href="somos.html" class="menu-link">
+                <li>Quiénes Somos</li>
+              </a>
+              <a href="vmt-prensa.html" class="menu-link">
+                <li>VMT en la prensa</li>
+              </a>
+              <a href="contactanos.html" class="menu-link">
+                <li>Contacto</li>
+              </a>
+              <a href="registrate.html" class="menu-link">
+                <li>Registro</li>
+              </a>
+            </ul>
+          </nav>
           
           <!-- Fin Menú -->
           
@@ -80,6 +107,13 @@ Licence URI: http://www.os-templates.com/template-terms
                    <a href="javascript:;" class="boton__left"></a>
                    <a href="javascript:;" class="boton__right"></a>
                  </div>
+                 
+                 <div class="containers_btnes" style="display:none">
+                 <a href="#" class="btn_green"><span>Compra</span><br>Reacondicionados</a>
+                 <a href="#" class="btn_gris"><span>Vende</span><br>Usados</a>
+
+
+                 </div>
                </div>
              </center>  
              <!--<p class="nospace btmspace-20">-->
@@ -97,11 +131,7 @@ Licence URI: http://www.os-templates.com/template-terms
 
        </div>
        
-       <div class="responsive">
-          <img src="images/boton-compra.png" class="botongris" /><br><br>
-          <img src="images/boton-vende.png" class="botonverde" />
-       </div>
-       
+      
        </div></div>
        
        <!-- Bajada --> 
@@ -132,23 +162,26 @@ Licence URI: http://www.os-templates.com/template-terms
         <span class=""><img src="images/triangulo.jpg"></span>
         
          <!-- MENÚ VENTA --> 
-         
-        <ul class="nav">
-        <li class="active"><a href="">Producto</a></li>
-        <li><a href="">Detalle</a></li>
-        <li><a href="">Cotización</a></li>
-        <li><a href="">¡Listo!</a></li>
-        </ul>
-        
-        <div class="nav-responsive">
-        	<select>
-            <option selected="selected" value="">MENU</option>
-            <option>Producto</option>
-            <option>Detalle</option>
-            <option>Cotización</option>
-            <option>Listo</option>
-            </select>
+         <div class="step-sale">
+            <ul class="nav">
+            <li class="active">Producto</li>
+            <li>Detalle</li>
+            <li>Cotización</li>
+            <li>¡Listo!</li>
+            </ul>
         </div>
+        
+         <!-- MENÚ VENTA RESPONSIVE --> 
+         
+         <div class="step-sale-responsive">
+            <ul class="nav-responsive">
+                <li class="one active icon-responsive">1</li>
+                <li class="two icon-responsive">2</li>
+                <li class="three icon-responsive">3</li>
+                <li class="four icon-responsive">4</li>
+            </ul>
+        </div>
+        
         
         <!-- PRODUCTO VENTA --> 
        
@@ -426,8 +459,11 @@ Licence URI: http://www.os-templates.com/template-terms
 
 <!-- JAVASCRIPTS --> 
 
-<script src="layout/scripts/jquery.min.js"></script> 
-<script src="layout/scripts/jquery.backtotop.js"></script> 
-<script src="layout/scripts/jquery.mobilemenu.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="js/menu-opener.js"></script>
+  
+<!--<script src="layout/scripts/jquery.backtotop.js"></script> 
+<script src="layout/scripts/jquery.mobilemenu.js"></script>-->
+
 </body>
 </html>
