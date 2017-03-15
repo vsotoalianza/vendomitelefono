@@ -36,7 +36,7 @@ File: Layout CSS
 .contenedor__botones{
 	position: absolute;
 	top: 150px;
-    left: 236px;
+    left: 244px;
 	width:100%;
 	alignment-adjust:central;
 }
@@ -44,33 +44,33 @@ File: Layout CSS
 .boton__left {
 	float: left;
 	text-align: right;
-	background-image:url(../../images/compraR.png);
+	background-image:url(../../images/green-sale.png);
 	background-repeat:no-repeat;
 	display:inline-block;
 	display:block;
-	width: 350px;
+	width: 345px;
 	height: 167px;
 }
 
 
 .boton__left:hover {
-	background-image:url(../../images/vende2-2.png); background-repeat:no-repeat; display:inline-block;
+	background-image:url(../../images/green-sale-active.png); background-repeat:no-repeat; display:inline-block;
 }
 
 .boton__right {
 	float:left;
 	text-align:center;
-	background-image:url(../../images/compra2.png);
+	background-image:url(../../images/gray-buy.png);
 	background-repeat:no-repeat;
 	display:inline-block;
 	display:block;
-	width: 350px;
+	width: 345px;
 	height: 167px;
 	margin-left: 20px;
 }
 
 .boton__right:hover {
-	background-image:url(../../images/compra2-2.png); background-repeat:no-repeat; display:inline-block;
+	background-image:url(../../images/gray-buy-active.png); background-repeat:no-repeat; display:inline-block;
 }
 
 
@@ -129,9 +129,9 @@ File: Layout CSS
 
 #intro div{margin-bottom:0;}
 
-#intro .introtxt *{    margin-top: 0px; margin-right: -1px; margin-bottom: -5px; padding: 0; background-color: transparent;}
+#intro .introtxt *{    margin-top: 0px; margin-right: -2px; margin-bottom: -5px; padding: 0; background-color: transparent;}
 #intro .introtxt .heading{ font-size:30px; text-align:center; vertical-align:central; text-height:12px; }
-.heading2 { font-size:50px;}
+.heading2 { font-size:50px;    text-align: center; margin-top: 30px;}
 #intro .introtxt p:first-of-type{ display:block; padding-left:10px;}
 #intro .introtxt .btn{ padding:10px 25px;   padding-bottom:50px;}
 
@@ -161,37 +161,49 @@ File: Layout CSS
 .fondoverde {
 
 	height:200px;
-	background-color:#00ad14;
+	background-color:#00af00;
 	width:100%;
 	position: relative;
 	}
 
-.eco { width:60%;}	
+.eco {width: 100%;
+    float: left;
+	margin-bottom: 30px;}	
 	
-.ecologico1 { vertical-align:central;
-color:#00ad14;
-text-height:14px;
-width:50%;
-
-}	
-
+.ecologico1 {
+    position: relative;
+    color: #00af00;
+    width: 100%;
+    float: left;
+	margin-bottom: 20px;
+}
+.eco2{width: 45%;}	
+.eco2 img{float:left}
 .ecologico2 {
-color:#00ad14;
-text-height:18px;
-font-size: 18px;
-text-align:left;
-vertical-align:central;
-float:right;
-width:80%;
-padding-top:5px
+    color: #00af00;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 70px;
+    border-left: 1px solid #00af00;
+    padding-left: 30px;
 }	
-
+.eco3{ 
+	width: 50%;
+    text-align: center;
+    margin-top: 20px;}
+.btn_green_buy,.btn_green_sale{
+	padding: 15px 50px;
+    border: 1px solid #00ad14;
+    color: #00af00;
+    font-size: 24px;}
+.btn_green_buy{margin-right:60px}
+.btn_green_sale{padding: 15px 60px;}
 .verde {
 	padding-bottom:40px;
 	padding-top:40px;
 	padding-right:20px;
 	padding-left:20px;
-	background-color:#00ad14;
+	background-color:#00af00;
 	color:#FFF;
 	font-weight:lighter;
 	position:inherit;
@@ -200,21 +212,40 @@ padding-top:5px
 	}
 	
 .mision {
-	padding-left:40px;
-	width:45%;
-	float:right;
-	font-weight:lighter;
-	color:#FFF;
-	}
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 1;
+	margin-bottom: 40px;
+}
 	
 .vision {
-	padding-left:20px;
-	padding-right:20px;
-	width:45%;
-	float:LEFT;
-	font-weight:lighter;
-	color:#FFF;}
+    background: #00af00;
+    width: 100%;
+    color: #FFF;
+    float: left;
+    position: relative;
+    z-index: 1;}
+.vision p{ color:#fff}
+.vision .container, .mision .container{
+	    padding: 50px;
+    float: left;}
 
+.circle2{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+	background:#cdcdcd;
+	display:block;
+	margin: 0 auto;
+}
+	
+.flotar_left{ float:left; }
+.flotar_right{ float:right;}
+.vision_p{ padding-top: 30px;}
+.anxo{ width:50%}
+.mision h1, .mision p{ color:#555; padding-left:30px;
+}
 
 /* Galeria */
 	
@@ -550,7 +581,7 @@ table a, #comments a{background-color:inherit;}
 @media screen and (min-width:180px) and (max-width:750px) {
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
-	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:90%; margin:0 0 30px 0; padding:0; alignment-adjust:central;}
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:100%; margin:0 0 30px 0; padding:0; alignment-adjust:central;}
 	.formularios { display:block; float:none; width:auto; margin:0 0 30px 0; padding:0; padding-left:30px; }
 	#topbar{padding:0;}
 	#topbar .fl_left{display:none;}
@@ -558,10 +589,10 @@ table a, #comments a{background-color:inherit;}
 	.contenedor { height:820px;}
 	#header #logo{margin:0 0 15px 0;}
 	#footer input{display:block; width:100%; padding:8px; float:left;}
-	#intro { padding-left:30px;}
-	.mision { padding-left:10px; width:100%; float:none; font-weight:lighter; color:#FFF;}
+	#intro { }
+	.mision {}
 	
-	.vision { padding-left:10px; padding-right:0px; width:100%; float:none; font-weight:lighter; color:#FFF;}
+	.vision {}
 	.contenedor__botones { display:none; clear:both;}
 	.responsive {display:inline;}
 	.banner-home{ float:left!important; width:100%!important; margin-top: 30px; text-align: center;}
@@ -635,11 +666,14 @@ table a, #comments a{background-color:inherit;}
 
 
 @media screen and (min-width:180px) and (max-width:1090px) {
+	.menu-opener, .menu2{display:block}
 	.shadow{max-width:100%;}
+	.sesion{padding-right: 30px;}
 	#topbar{text-align:center;}
-	#header{padding-top:30px;}
+	#header{padding: 0px 50px;
+    margin:25px 0; position:relative}
 	#header #logo h1{margin:0; text-align:center;}
-	#intro{ padding-bottom:30px; alignment-adjust:central;}
+	#intro{alignment-adjust:central;}
 	#intro .introtxt{padding-top:0;}
 	#mainav{margin-top:6px;}
 	#mainav ul{display:none;}
@@ -680,22 +714,52 @@ table a, #comments a{background-color:inherit;}
 }
 	.contenedor__botones { display:none; clear:both;}
 	.responsive { display:block; clear:both; text-height:12px; padding-bottom: 30px;}
-	.pie{}
-	
-	.menu, #mainav{ width:100%}
-	.logo{ float:none}
+	.pie{width: 80%;}
+	.menu, #mainav{ display:none}
+	.logo.top-logo{margin-top:15px}
 	.nav-responsive{ display:block!important}
 	.nav{ display:none!important}
+	
+	.menu-opener, .menu2, .menu-inner, .menu-link{display: block!important}
+	
+	.containers_btnes{
+		    display: block!important;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+	}
+	
+	.btn_green{
+    float: right;
+    background: #768292!important;
+    padding: 20px!important;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.133rem;
+    width: 50%;
+	font-style: italic;}
+	.btn_green span{ font-weight:bold; font-style:normal}
+	.btn_gris{ float:left;
+	background: #00af00!important;
+    padding: 20px!important;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 1.133rem;
+    width: 47%;
+	font-style: italic;}
+	.btn_gris span{ font-weight:bold; font-style:normal}
+.step-sale{ display:none!important}
+.step-sale-responsive{ display:block!important}
 }
 
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:1200px) {
-	.shadow{max-width:1200px;}
+	.wrap{max-width:1200px;}
 	.botonsito { width:100%; }
 	#footer input{display:block; width:75%; padding:8px; float:left;}
 	.responsive { display:none; clear:both; padding-bottom: 30px;}
-	
 	
 }
 
@@ -703,12 +767,17 @@ table a, #comments a{background-color:inherit;}
 /* Other
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:650px) {
+	.view{
+		width:100%!important; margin: 0 0 20px 0!important;}
+	.producto { width: 100%!important;}
+	.iconografia {padding: 0 50px!important;}
+	.nav-responsive{    width: 90%!important;}
 	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
 	.scrollable table{margin:0; padding:0; white-space:nowrap;}
 	.encabezado2 { font-size:36px; color:#FFF; text-align:center; width:80%; vertical-align:bottom; alignment-adjust:central;}
 	.encabezado3 { font-size:30px; color:#666; text-align:left; padding-top:30px;  width:80%; alignment-adjust:central; }
-	.container{padding-top:80px; padding-bottom:60px; background-color:transparent; padding-left:50px; padding-right:50px;}
-	.ecologico1 { vertical-align:central; color:#00ad14; text-height:14px; width:90%;}
+	.container{padding-top:30px; padding-bottom:60px; background-color:transparent; padding-left:50px; padding-right:50px;}
+	.ecologico1 { vertical-align:central; color:#00ad14; text-height:14px;}
 	.main{ position:relative; width:70%; margin: 0 auto; padding:20px 0;}
 	.heading2 { font-size:35px; font-weight:lighter;}	
 	.heading { font-size:24px;}
@@ -724,9 +793,33 @@ table a, #comments a{background-color:inherit;}
 }
 	.responsive { display:inline;}
 	#intro .introtxt .heading{font-size: 21px;}
-	.pie {}
-	#intro { margin-bottom:90px}
+	.pie {position: relative; }
+	#intro { margin-bottom:25px}
 	.latam_sale{width: 100%;margin-top: 20px;}
 	.bajada{margin-top: 20px; left:0}
 	.contenedor {min-height: 1100px;}
+	.logo{ width:80%;}
+	.logo_latam{ float:none; border:none; padding:0; margin-bottom:15px}
+	.latamclass{ width:100%; text-align:center}
+	.flotante{padding-left: 30px!important;}
+	.eco3{width:100%; margin:0;}
+	.btn_green_buy{width: 100%;
+    float: right;
+    margin: 0 0 20px 0;}
+	.btn_green_sale{float:left; width:100%;}
+	.anxo {
+    width: 100%;
+}
+}
+
+
+@media screen and (max-width:830px) {
+	.eco2 img {float: none!important;}
+	.ecologico2{
+	border: none;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    padding: 0;	
+		}
 }
