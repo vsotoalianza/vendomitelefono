@@ -18,8 +18,36 @@ Licence URI: http://www.os-templates.com/template-terms
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400italic,400,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
   <!--favicon-->
   <link rel="icon" type="image/png" href="images/favicon.png" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"type="text/javascript" charset="utf-8"></script>
+    
+<script>
+$(function(){
 
+     $('a[href*=#]').click(function() {
 
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+
+             var $target = $(this.hash);
+
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+             if ($target.length) {
+
+                 var targetOffset = $target.offset().top;
+
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                 return false;
+
+            }
+
+       }
+
+   });
+
+});
+</script>
 </head>
 
 <!-- Body --> 
@@ -104,13 +132,13 @@ Licence URI: http://www.os-templates.com/template-terms
                   
                   </p>
                   <div class="contenedor__botones">
-                   <a href="javascript:;" class="boton__left"></a>
-                   <a href="javascript:;" class="boton__right"></a>
+                   <a href="#venta" class="boton__left"></a>
+                   <a href="https://www.rephone.cl/" target="_blank" class="boton__right"></a>
                  </div>
                  
                  <div class="containers_btnes" style="display:none">
-                 <a href="#" class="btn_green"><span>Compra</span><br>Reacondicionados</a>
-                 <a href="#" class="btn_gris"><span>Vende</span><br>Usados</a>
+                 <a href="https://www.rephone.cl/" target="_blank" class="btn_green"><span>Compra</span><br>Reacondicionados</a>
+                 <a href="#venta" class="btn_gris"><span>Vende</span><br>Usados</a>
 
 
                  </div>
@@ -151,7 +179,7 @@ Licence URI: http://www.os-templates.com/template-terms
                 <div class="video-home">
                 <iframe width="530" height="315" src="https://www.youtube.com/embed/zkOGavXl1Fg" frameborder="0" allowfullscreen></iframe>
                 </div>
-               <h2>VENDE AQUÍ</h2>
+               <h2><a id="venta">VENDE AQUÍ</a></h2>
             </main>
        
         

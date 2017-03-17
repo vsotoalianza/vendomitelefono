@@ -8,6 +8,7 @@ Licence URI: http://www.os-templates.com/template-terms
 File: Layout CSS
 */
 
+
 @import url("fontawesome-4.2.0.min.css");
 @import url("framework.css");
 
@@ -313,6 +314,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 /* Content */
 .container .content{}
+.container .vmt{
+	position:relative;
+	float:left;
+	display:block}
 
 /* Comments */
 #comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
@@ -666,6 +671,15 @@ table a, #comments a{background-color:inherit;}
 
 
 @media screen and (min-width:180px) and (max-width:1090px) {
+    .arrow-three{}
+	.arrow-two{}
+	.arrow-four {}
+	.arrow-one{}
+	
+	#slideshow-wrap .arrows{top:120%!important; margin-top:0!important;}
+	input[type=radio]#button-3:checked~.arrows#arrow-2, input[type=radio]#button-4:checked~.arrows#arrow-3, input[type=radio]#button-2:checked~.arrows#arrow-1  { right:60%!important;}
+	input[type=radio]#button-1:checked~.arrows#arrow-2, input[type=radio]#button-2:checked~.arrows#arrow-3, input[type=radio]#button-3:checked~.arrows#arrow-4{ left:60%}
+	#slideshow-wrap{ max-width:100%!important;}
 	.menu-opener, .menu2{display:block}
 	.shadow{max-width:100%;}
 	.sesion{padding-right: 30px;}
@@ -776,7 +790,7 @@ table a, #comments a{background-color:inherit;}
 	.scrollable table{margin:0; padding:0; white-space:nowrap;}
 	.encabezado2 { font-size:36px; color:#FFF; text-align:center; width:80%; vertical-align:bottom; alignment-adjust:central;}
 	.encabezado3 { font-size:30px; color:#666; text-align:left; padding-top:30px;  width:80%; alignment-adjust:central; }
-	.container{padding-top:30px; padding-bottom:60px; background-color:transparent; padding-left:50px; padding-right:50px;}
+	.container{background-color:transparent; padding:30px 40px}
 	.ecologico1 { vertical-align:central; color:#00ad14; text-height:14px;}
 	.main{ position:relative; width:70%; margin: 0 auto; padding:20px 0;}
 	.heading2 { font-size:35px; font-weight:lighter;}	
@@ -803,17 +817,12 @@ table a, #comments a{background-color:inherit;}
 	.latamclass{ width:100%; text-align:center}
 	.flotante{padding-left: 30px!important;}
 	.eco3{width:100%; margin:0;}
-	.btn_green_buy{width: 100%;
-    float: right;
-    margin: 0 0 20px 0;}
-	.btn_green_sale{float:left; width:100%;}
-	.anxo {
-    width: 100%;
-}
+.anxo {  width: 100%;}
 }
 
 
 @media screen and (max-width:830px) {
+	.eco2 { width: 100%;}
 	.eco2 img {float: none!important;}
 	.ecologico2{
 	border: none;
@@ -821,5 +830,9 @@ table a, #comments a{background-color:inherit;}
     text-align: center;
     margin: 30px 0;
     padding: 0;	
-		}
+}
+	.btn_green_buy{width: 100%;
+    float: right;
+    margin: 0 0 20px 0;}
+	.btn_green_sale{float:left; width:100%;}
 }
